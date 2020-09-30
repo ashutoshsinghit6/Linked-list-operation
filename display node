@@ -1,0 +1,15 @@
+# Linked-list-operation
+    def display(self):
+        thead=self._head
+        while thead:
+            print(thead._element, end=" --")
+            thead=thead._next
+            #print()
+L=LinkedList()
+L.add_first(10)
+L.add_last(20)
+L.add_last(30)
+L.add_first(60)
+L.add_last(56)
+L.add_any(100,4)
+L.display()
