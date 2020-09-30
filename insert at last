@@ -1,0 +1,11 @@
+# Linked-list-operation
+   def add_last(self,e):
+        new_node=self._Node(e,None)
+        if self.is_empty():
+            self._head=new_node
+            self._tail=new_node
+
+        else:
+            self._tail._next=new_node
+        self._tail=new_node
+        self._size +=1
