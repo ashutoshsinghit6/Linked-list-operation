@@ -1,0 +1,18 @@
+# Linked-list-operation
+    def add_any(self,e,pos):
+        new_node=self._Node(e,None)
+        thead=self._head
+        i=0
+        while i< pos-2:
+            thead=thead._next
+            i=i+1
+        new_node._next=thead._next
+        thead._next=new_node
+        self._size +=1
+
+    def display(self):
+        thead=self._head
+        while thead:
+            print(thead._element, end=" --")
+            thead=thead._next
+            #print()
